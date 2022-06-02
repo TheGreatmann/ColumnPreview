@@ -6,7 +6,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .sedans{
     border-bottom-left-radius: 17px;
@@ -60,10 +60,29 @@ p{
     border: 1px solid #eee;
     color: #fff;
 }
+.con{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+}
+.attribution{
+    padding-top: 10px;
+}
 
 @media screen and (max-width: 375px) {
+    .con{
+        height: 230vh;
+    }
     .container {
         flex-wrap: wrap;
     }
-    
+    .sedans{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 17px;
+    }
+    .luxury{
+        border-bottom-left-radius: 17px;
+        border-top-right-radius: 0px;
+    }
 }
